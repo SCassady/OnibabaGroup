@@ -1,0 +1,447 @@
+/*
+Element selectors
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+main, footer {
+  position:relative;
+  left: 100px;
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+/*main {
+
+}*/
+
+header{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+hr {
+    border: none;
+    border-top: medium double #777;
+    padding-top: 5px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 400;
+  color: #ff0080;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: rgb(0, 161, 213);
+  /*text-transform: uppercase;*/
+}
+
+h4 {
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  /*color: black;*/
+  /*margin: 10px;*/
+}
+
+/*
+Class selectors
+*/
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.masthead {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index:199999;
+  background-color: white;
+  box-shadow: 0px 1px 5px 0px #555;
+  -moz-box-shadow: 0px 1px 5px 0px #555;
+  -webkit-box-shadow: 0px 1px 5px 0px #555;
+}
+
+.sideframe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /*right: 0;*/
+  left: 0;
+  z-index:199998;
+  background-color: #dbc;
+}
+
+.spacer-side {
+  height: 75px;
+}
+
+.spacer-side {
+  height: 75px;
+}
+
+.spacer-main {
+  height: 75px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mast-row {
+  height: 100%;
+}
+
+.side-content-top {
+  height: 60%
+  padding-left: 0px;
+  width: 100%;
+  margin-left: 0px;
+  /*border: 1px solid black;*/
+}
+
+.side-content-bottom {
+  height: 30%
+  padding-left: 0px;
+  width: 100%;
+  margin-left: 0px;
+  /*border: 1px solid black;*/
+
+}
+
+.side-link {
+  width: 100%;
+  text-align: left;
+  margin: 20px 0px 20px 20px;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  /*text-transform: uppercase;*/
+  /*font-weight: bold;*/
+  /*border: 1px solid black;*/
+}
+
+.icon-col {
+  width: 12%;
+}
+
+.title-col {
+  width: 88%;
+  text-align: left;
+}
+
+.nav-col {
+  height: 100%;
+  width: calc((97%)/8);
+  /*width: calc((100%/8)-8*10px);*/
+  background-color: black;
+  margin: 10px calc(3%/16) 0px calc(3%/16);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.subnav-col-left {
+  height: 100%;
+  width: 200px;
+  /*width: calc((100%/8)-8*10px);*/
+  background-color: #bbb;
+  margin: 0px 0px 0px 0px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  padding-top: 10px;
+  color: #afc;
+}
+
+.subnav-col-mid {
+  height: 100%;
+  width: calc((100% - 200px)*0.7);
+  /*width: calc((100%/8)-8*10px);*/
+  background-color: #cccccc;
+  margin: 0px 0px 0px 0px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.subnav-col-right {
+  height: 100%;
+  width: calc((100% - 200px)*0.3);
+  /*width: calc((100%/8)-8*10px);*/
+  background-color: #d9d9d9;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.dividernav-col {
+  margin-top: 25px;
+}
+.search {
+  width: 20%;
+}
+.article-col {
+  width: calc(.64*(100%-40px));
+  margin-right: 20px;
+  margin-left: 0px;
+}
+
+.related-col {
+  width: calc(.13*(100%-40px));
+  margin-right: 20px;
+  margin-left: 0px;
+}
+
+.sidebar-col {
+  /*width: calc(.20*(100%-20px));*/
+  width: calc(.18*(100%-40px));
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.footer-col {
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+
+.blue {
+  background-color: rgb(0, 161, 213);
+}
+
+.gray {
+  background-color: rgb(183, 177, 162);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.gray-text {
+  color: rgb(183, 177, 162);
+}
+
+.white-text {
+  color: white;
+}
+
+.featuredWork {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #fcf2e8;
+}
+
+.left-col {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.center-col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right-col {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.link {
+  font-weight: 300;
+  color: black;
+  font-style: italic;
+}
+
+.social {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+[class*="zocial-"]:before {
+  color: #666666;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  width: 4em;
+}
+
+/*
+Major breakpoint: drop right-most column under 770px.
+*/
+
+@media only screen and (max-width: 770px) {
+
+  .featuredWork {
+    width: calc((100% - 30px) / 2);
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .left-col {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .center-col {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .right-col {
+    margin-left: 0;
+  }
+
+}
+
+/*
+Minor breakpoint: decrease font size under 650px.
+*/
+
+@media only screen and (max-width: 650px) {
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 33px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+}
+
+/*
+Major breakpoint: drop all columns at 499px.
+*/
+
+@media only screen and (max-width: 499px) {
+
+  .icon-col {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-col {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 41px;
+    margin-top: 5px;
+  }
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .featuredWork{
+    width: calc(100% - 20px);
+  }
+
+  .left-col, .right-col, .center-col {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+}
+
+/*
+Minor breakpoint: decrease title font size (for iPhone 5).
+*/
+
+@media only screen and (max-width: 350px) {
+
+  h1 {
+    font-size: 37px;
+  }
+
+}
